@@ -33,12 +33,6 @@ public class EmployeeController {
 	    	return repo.save(employee);
 	    }
 	    
-	    @GetMapping("/{id})")
-	    public Employee getById(@PathVariable Long id) {
-			return repo.findById(id).orElseThrow();
-	    	
-	    }
-	    
 	    @DeleteMapping("/{id}")
 	    public void deleteById(@PathVariable Long id) {
 	    	 repo.deleteById(id);
